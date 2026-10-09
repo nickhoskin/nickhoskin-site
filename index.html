@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nick Hoskin | Making the complex compelling</title>
+<meta name="description" content="Strategic storytelling for science, deep tech and impact. I help founders, leaders and teams turn work that's hard to explain into stories the right people understand, care about and back.">
+<meta name="author" content="Nick Hoskin">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nick Hoskin | Making the complex compelling">
+<meta property="og:description" content="Strategic storytelling for science, deep tech and impact.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F9F8F4">
+
+<!-- Favicon: simple NH monogram, swap for your own if you have one -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23F9F8F4' text-anchor='middle'%3ENH%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&family=Instrument+Serif&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #F9F8F4;
+    --ink: #0E0E0E;
+    --muted: #2A2A2A;
+    --line: #E3E1DA;
+    --button: #FFFFFF;
+    --serif: "Instrument Serif", "Times New Roman", serif;
+    --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--mono);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    padding: 96px clamp(24px, 9.5vw, 130px);
+  }
+
+  .wrap { max-width: 640px; }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 36px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(40px, 5.2vw, 58px);
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    margin: 0 0 44px;
+  }
+
+  h1 span { display: block; }
+
+  .lede {
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--muted);
+    max-width: 580px;
+    margin: 0 0 52px;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 22px 14px 24px;
+    background: var(--button);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+  }
+
+  .cta svg { width: 17px; height: 13px; flex: none; fill: currentColor; }
+
+  .cta:hover,
+  .cta:focus-visible {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  .cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+  /* Gentle entrance */
+  .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  .reveal:nth-child(2) { animation-delay: .08s; }
+  .reveal:nth-child(3) { animation-delay: .16s; }
+  .reveal:nth-child(4) { animation-delay: .24s; }
+
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { animation: none; opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 520px) {
+    main { padding: 64px 24px; }
+    .eyebrow { margin-bottom: 28px; }
+    h1 { margin-bottom: 32px; }
+    .lede { font-size: 13px; margin-bottom: 40px; }
+    .cta { font-size: 13px; letter-spacing: 0.14em; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <p class="eyebrow reveal">New site coming soon</p>
+
+      <h1 class="reveal">
+        <span>Making the complex compelling.</span>
+        Strategic storytelling for science, deep tech and impact.
+      </h1>
+
+      <p class="lede reveal">
+        I help founders, leaders and teams turn work that's hard to explain
+        into stories the right people understand, care about and back.
+      </p>
+
+      <a class="cta reveal" href="mailto:design@nickhoskin.com?subject=Hello%20Nick">
+        <svg viewBox="0 0 17 13" aria-hidden="true"><path d="M0 0h17v1.6L8.5 7.4 0 1.6V0Zm0 3.5 8.5 5.8L17 3.5V13H0V3.5Z"/></svg>
+        Get in touch
+      </a>
+    </div>
+  </main>
+</body>
+</html>
